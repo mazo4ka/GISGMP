@@ -1,0 +1,66 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://maps.kosmosnimki.ru/api/index.html?20EF10840CD6463FB1A2DD1C3BBD4845"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='left_layers']/div/div[2]/ul/li/ul/li[3]/div[2]/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='leaflet-tile-pane']/div[13]/div[2]/canvas[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='leaflet-tile-pane']/div[13]/div[2]/canvas[5]"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "name",
+        "value": "HOxxJgWOX0yavSO8"
+      }
+    },
+    {
+      "type": "setElementNotSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='left_layers']/div/div[2]/ul/li/ul/li[3]/ul/li[2]/div[1]/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='calendar-widget-container']/div/div/div/span[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.CalendarWidget-dateEnd"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
