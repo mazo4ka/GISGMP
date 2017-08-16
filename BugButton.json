@@ -1,0 +1,49 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "chrome://vbmail.ru/content/visual-bookmarks/visual-bookmarks.html"
+    },
+    {
+      "type": "get",
+      "url": "http://maps.kosmosnimki.ru/api/index.html?CE6DD97EFD3B4704BEB73E9D51FD2C9D"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//tbody[@id='agroFieldsTableBody']//td[.='337.79225450907416']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "img.detection-button.edit-button"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.detection-ok-button"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.cancel-button"
+      }
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
